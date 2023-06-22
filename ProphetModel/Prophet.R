@@ -1,5 +1,4 @@
 library(prophet)
-library(tidyverse)
 solusdt <- read.csv("filepath_to_original_file//solusdt.csv")
 modelA <- prophet(solusdt)
 futureA <- make_future_dataframe(modelA, periods = 10) #period in Days
